@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import './App.css';
-import contact from './components/contact';
+import contact from './contact';
 import search from './search';
 import result from './result';
 function App() {
@@ -17,10 +17,9 @@ function App() {
         </div>
         <Routes>
           <Route path='/infinite-site' element={<account/>}/>
-          <Route path='/infinte-site/FAQ' element={<FAQ/>}/>
           <Route path='/infinite-site/contact/:person'element={<contact />}/>
           <Route path='/infinite-site/search' element={<search/>}/>
-            <Route path= ":query" element= {<results />} />
+            <Route path= ":query" element= {<result />} />
         </Routes>
       </BrowserRouter>
     </div>
