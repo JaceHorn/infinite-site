@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-const result= () => {
-    const params= useParams ();
+const Result= () => {
+    const params = useParams();
     return(
         <div>
             <br />
@@ -15,4 +15,4 @@ const result= () => {
         </div>
     );
 };
-export default result;
+export default Result;

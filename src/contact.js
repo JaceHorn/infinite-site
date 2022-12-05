@@ -1,8 +1,8 @@
 import React from "react";
 import {useParams} from "react-router-dom";
 
-const contact = () => {
-    const params = useParams();
+const Contact = () => {
+    const {params} = useParams();
     return(
         <div>
             Team Member: {params.person}
@@ -11,4 +11,4 @@ const contact = () => {
     );
 };
 
-export default contact;
+export default Contact;
